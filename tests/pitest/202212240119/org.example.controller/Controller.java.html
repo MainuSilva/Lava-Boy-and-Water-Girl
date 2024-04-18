@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Controller.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package org.example.controller;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.example.Game;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.example.gui.KeyHandler;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.io.IOException;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public abstract class Controller&#60;T&#62; {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final T model;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public Controller(T model) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.model = model;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public T getModel() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_17'>1</a>
+<span>
+
+1. getModel : replaced return value with null for org/example/controller/Controller::getModel &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return model;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public abstract void step(Game game, KeyHandler keyH) throws IOException, ClassNotFoundException;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e353e1d_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e353e1d_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e353e1d_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getModel<br/><b>Killed by : </b>org.example.controller.state.GameOverControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.GameOverControllerTest]/[method:downTest()]</span></span> replaced return value with null for org/example/controller/Controller::getModel &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>org.example.controller.game.player.LavaBoyControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.LavaBoyControllerTest]/[method:powerPlayerTest()] (5 ms)</li><li>org.example.controller.state.GameOverControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.GameOverControllerTest]/[method:tryAgainStateTest()] (3 ms)</li><li>org.example.controller.menu.OptionsControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.OptionsControllerTest]/[method:increaseSEVolumeTest()] (4 ms)</li><li>org.example.controller.state.PauseControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.PauseControllerTest]/[method:continueStateTest()] (3 ms)</li><li>org.example.controller.game.player.LavaBoyControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.LavaBoyControllerTest]/[method:moveLavaBoyLeftTest()] (5 ms)</li><li>org.example.controller.game.surface.ElevatorControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.surface.ElevatorControllerTest]/[method:movePlayersUpTest()] (7 ms)</li><li>org.example.controller.state.GameWinControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.GameWinControllerTest]/[method:upTest()] (3 ms)</li><li>org.example.controller.game.monster.MonsterControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.MonsterControllerTest]/[method:moveMonsterDownTest()] (5 ms)</li><li>org.example.controller.game.player.LavaBoyControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.LavaBoyControllerTest]/[method:retrieveLavaCoinTest()] (4 ms)</li><li>org.example.controller.menu.MenuControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.MenuControllerTest]/[method:exitTest()] (3 ms)</li><li>org.example.controller.state.PauseControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.PauseControllerTest]/[method:backStateTest()] (2 ms)</li><li>org.example.controller.game.ArenaControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.ArenaControllerTest]/[method:lossTest()] (7 ms)</li><li>org.example.controller.menu.OptionsControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.OptionsControllerTest]/[method:upTest()] (5 ms)</li><li>org.example.controller.state.GameOverControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.GameOverControllerTest]/[method:downTest()] (2 ms)</li><li>org.example.controller.state.PauseControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.PauseControllerTest]/[method:upTest()] (3 ms)</li><li>org.example.controller.game.player.LavaBoyControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.LavaBoyControllerTest]/[method:moveLavaBoyRightTest()] (4 ms)</li><li>org.example.controller.game.player.WaterGirlControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.WaterGirlControllerTest]/[method:powerPlayerTest()] (7 ms)</li><li>org.example.controller.game.monster.MonsterControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.MonsterControllerTest]/[method:moveMonsterUpTest()] (4 ms)</li><li>org.example.controller.game.monster.MonsterControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.MonsterControllerTest]/[method:moveMonsterLeftTest()] (7 ms)</li><li>org.example.controller.state.PauseControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.PauseControllerTest]/[method:tryAgainStateTest()] (6 ms)</li><li>org.example.controller.game.ArenaControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.ArenaControllerTest]/[method:winTest()] (5 ms)</li><li>org.example.controller.menu.OptionsControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.OptionsControllerTest]/[method:actionLockCounterTest()] (2 ms)</li><li>org.example.controller.menu.OptionsControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.OptionsControllerTest]/[method:downTest()] (2 ms)</li><li>org.example.controller.menu.MenuControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.MenuControllerTest]/[method:scoreListTest()] (3 ms)</li><li>org.example.controller.game.player.LavaBoyControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.LavaBoyControllerTest]/[method:moveLavaBoyUpTest()] (7 ms)</li><li>org.example.controller.state.GameWinControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.GameWinControllerTest]/[method:exitStateTest()] (3 ms)</li><li>org.example.controller.menu.MenuControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.MenuControllerTest]/[method:instructionsState()] (2 ms)</li><li>org.example.controller.game.player.WaterGirlControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.WaterGirlControllerTest]/[method:moveWaterGirlLeftTest()] (5 ms)</li><li>org.example.controller.menu.OptionsControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.OptionsControllerTest]/[method:backStateTest()] (3 ms)</li><li>org.example.controller.state.PauseControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.PauseControllerTest]/[method:downTest()] (3 ms)</li><li>org.example.controller.game.power.LavaPowerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.power.LavaPowerControllerTest]/[method:lavaPowerHitsMonsterTest()] (4 ms)</li><li>org.example.controller.game.monster.MonsterControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.MonsterControllerTest]/[method:testRandomMoveRightTest()] (4 ms)</li><li>org.example.controller.game.ArenaControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.ArenaControllerTest]/[method:pauseTest()] (4 ms)</li><li>org.example.controller.game.player.LavaBoyControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.LavaBoyControllerTest]/[method:decreaseLifeTest()] (7 ms)</li><li>org.example.controller.game.power.WaterPowerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.power.WaterPowerControllerTest]/[method:waterPowerHitsMonsterTest()] (4 ms)</li><li>org.example.controller.menu.OptionsControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.OptionsControllerTest]/[method:decreaseMusicVolumeTest()] (4 ms)</li><li>org.example.controller.menu.MenuControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.MenuControllerTest]/[method:optionState()] (3 ms)</li><li>org.example.controller.game.surface.ElevatorControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.surface.ElevatorControllerTest]/[method:moveElevatorDownTest()] (4 ms)</li><li>org.example.controller.menu.MenuControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.MenuControllerTest]/[method:downTest()] (3 ms)</li><li>org.example.controller.game.monster.FinalBossControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.FinalBossControllerTest]/[method:randomMoveAlertTest()] (7 ms)</li><li>org.example.controller.game.power.WaterPowerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.power.WaterPowerControllerTest]/[method:removePowerAfterPowerLifeReachesZeroTest()] (3 ms)</li><li>org.example.controller.menu.MenuControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.MenuControllerTest]/[method:startTest()] (3 ms)</li><li>org.example.controller.game.player.PlayerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.PlayerControllerTest]/[method:moveToEachOther()] (4 ms)</li><li>org.example.controller.game.power.WaterPowerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.power.WaterPowerControllerTest]/[method:waterPowerHitsBossTest()] (3 ms)</li><li>org.example.controller.game.monster.FinalBossControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.FinalBossControllerTest]/[method:randomMoveSleepyTest()] (5 ms)</li><li>org.example.controller.game.monster.MonsterControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.MonsterControllerTest]/[method:moveMonsterRightTest()] (6 ms)</li><li>org.example.controller.game.power.LavaPowerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.power.LavaPowerControllerTest]/[method:lavaPowerHitsWaterGirl()] (4 ms)</li><li>org.example.controller.menu.OptionsControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.OptionsControllerTest]/[method:limitsSEVolumeTest()] (4 ms)</li><li>org.example.controller.menu.OptionsControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.OptionsControllerTest]/[method:decreaseSEVolumeTest()] (3 ms)</li><li>org.example.controller.menu.OptionsControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.OptionsControllerTest]/[method:limitsMusicVolumeTest()] (6 ms)</li><li>org.example.controller.game.player.WaterGirlControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.WaterGirlControllerTest]/[method:moveWaterGirlUpTest()] (6 ms)</li><li>org.example.controller.state.GameOverControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.GameOverControllerTest]/[method:exitStateTest()] (3 ms)</li><li>org.example.controller.game.power.LavaPowerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.power.LavaPowerControllerTest]/[method:removePowerAfterPowerLifeReachesZeroTest()] (3 ms)</li><li>org.example.controller.state.GameWinControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.GameWinControllerTest]/[method:playAgaintateTest()] (3 ms)</li><li>org.example.controller.menu.MenuControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.MenuControllerTest]/[method:upTest()] (3 ms)</li><li>org.example.controller.game.monster.MonsterControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.MonsterControllerTest]/[method:randomMoveUpTest()] (5 ms)</li><li>org.example.controller.game.player.LavaBoyControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.LavaBoyControllerTest]/[method:lavaBoyPressedPower()] (6 ms)</li><li>org.example.controller.game.player.WaterGirlControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.WaterGirlControllerTest]/[method:retrieveWaterCoinTest()] (6 ms)</li><li>org.example.controller.menu.OptionsControllerTest.[engine:junit-jupiter]/[class:org.example.controller.menu.OptionsControllerTest]/[method:increaseMusicVolumeTest()] (4 ms)</li><li>org.example.controller.game.monster.MonsterControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.MonsterControllerTest]/[method:testRandomMoveLeftTest()] (5 ms)</li><li>org.example.controller.game.player.WaterGirlControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.WaterGirlControllerTest]/[method:waterGirlPressedPower()] (5 ms)</li><li>org.example.controller.state.GameWinControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.GameWinControllerTest]/[method:downTest()] (3 ms)</li><li>org.example.controller.game.player.PlayerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.PlayerControllerTest]/[method:moveAllEmpty()] (3 ms)</li><li>org.example.controller.game.monster.FinalBossControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.FinalBossControllerTest]/[method:powerBossTest()] (7 ms)</li><li>org.example.controller.game.surface.ElevatorControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.surface.ElevatorControllerTest]/[method:moveElevatorUpTest()] (6 ms)</li><li>org.example.controller.game.player.WaterGirlControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.WaterGirlControllerTest]/[method:decreaseLifeTest()] (5 ms)</li><li>org.example.controller.game.power.WaterPowerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.power.WaterPowerControllerTest]/[method:waterPowerHitsLavaBoy()] (4 ms)</li><li>org.example.controller.game.monster.FinalBossControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.monster.FinalBossControllerTest]/[method:bossDeathTest()] (5 ms)</li><li>org.example.controller.game.player.PlayerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.PlayerControllerTest]/[method:moveNotEmpty()] (3 ms)</li><li>org.example.controller.state.GameOverControllerTest.[engine:junit-jupiter]/[class:org.example.controller.state.GameOverControllerTest]/[method:upTest()] (3 ms)</li><li>org.example.controller.game.player.WaterGirlControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.player.WaterGirlControllerTest]/[method:moveWaterGirlRightTest()] (5 ms)</li><li>org.example.controller.game.power.LavaPowerControllerTest.[engine:junit-jupiter]/[class:org.example.controller.game.power.LavaPowerControllerTest]/[method:lavaPowerHitsBossTest()] (4 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.7.4
+
+</body>
+</html>
