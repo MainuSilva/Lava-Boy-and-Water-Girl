@@ -220,5 +220,5 @@ Many comments may have been left behind which were notes left by each other for 
 
 ## Self-Evaluation
 
-- Manuel Silva: 50%
-- Maria Laranjeira: 50%
+- Manuel Silva: 75%
+- Maria Laranjeira: 25%
